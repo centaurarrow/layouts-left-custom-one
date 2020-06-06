@@ -4,7 +4,7 @@
 # authors: Angus McLeod & Raghu Avula
 
 DiscourseEvent.on(:layouts_ready) do
-  DiscourseLayouts::WidgetHelper.add_widget('left-custom-html-one', position: 'left', order: '2')
+  DiscourseLayouts::Widget.add('left-custom-html-one', position: 'left', order: '2')
 end
 
 after_initialize do
